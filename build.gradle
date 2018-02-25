@@ -1,0 +1,33 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.2.21'
+    }
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+    }
+}
+
+apply plugin: 'kotlin'
+
+repositories {
+    jcenter()
+}
+
+ext {
+    kotlinVersion = '1.2.21'
+    junitVersion = '5.0.2'
+}
+
+dependencies {
+    compile("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
+
+    testCompile("org.junit.jupiter:junit-jupiter-api:$junitVersion")
+    testCompile("org.junit.jupiter:junit-jupiter-params:$junitVersion")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.4.1'
+}
