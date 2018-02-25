@@ -21,7 +21,7 @@ class ExponentialSearch {
                 i *= 2
             }
 
-            return BinarySearch.search(arr, i / 2, min(i, arr.size), key)
+            return BinarySearch.search(arr = arr, from = i / 2, to = min(i, arr.size), key = key)
         }
     }
 }

@@ -1,5 +1,7 @@
 # Kotlin algorithms
 
+[![Build status](https://travis-ci.org/amolkov/kotlin-algorithms.svg?branch=master)](https://travis-ci.org/amolkov/kotlin-algorithms)
+
 Minimal and clean example implementations of data structures and algorithms in Kotlin.
 
 ## Setting up
@@ -24,15 +26,16 @@ You can build the app with `$ ./gradlew build` command.
     - [jump search](src/main/kotlin/com/github/amolkov/kotlin/algorithms/searching/JumpSearch.kt)
     - [linear search](src/main/kotlin/com/github/amolkov/kotlin/algorithms/searching/LinearSearch.kt)
     - [ternary search](src/main/kotlin/com/github/amolkov/kotlin/algorithms/searching/TernarySearch.kt)
+    
 - [Sorting](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting)
-    - [bubble_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/BubbleSort.kt)
-    - [counting_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/CountingSort.kt)
-    - [heap_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/HeapSort.kt)
-    - [insertion_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/InsertionSort.kt)
-    - [merge_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/MergeSort.kt)
-    - [quick_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/QuickSort.kt)
-    - [selection_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/SelectionSort.kt)
-    - [shell_sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/ShellSort.kt)
+    - [bubble sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/BubbleSort.kt)
+    - [counting sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/CountingSort.kt)
+    - [heap sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/HeapSort.kt)
+    - [insertion sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/InsertionSort.kt)
+    - [merge sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/MergeSort.kt)
+    - [quick sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/QuickSort.kt)
+    - [selection sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/SelectionSort.kt)
+    - [shell sort](src/main/kotlin/com/github/amolkov/kotlin/algorithms/sorting/ShellSort.kt)
 
 ## License
 
