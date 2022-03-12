@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.sorting
 
 class InsertionSort {
+
     companion object {
 
         /**

@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.sorting
 
 class MergeSort {
+
     companion object {
 
         /**
@@ -10,7 +11,7 @@ class MergeSort {
          *  @param arr the array to be sorted
          */
         fun sort(arr: Array<Int>) {
-            val helper = Array(arr.size) { _ -> 0 }
+            val helper = Array(arr.size) { 0 }
             sort(arr, 0, arr.size - 1, helper)
         }
 

@@ -5,6 +5,7 @@ import kotlin.math.min
 import kotlin.math.sqrt
 
 class JumpSearch {
+
     companion object {
 
         /**

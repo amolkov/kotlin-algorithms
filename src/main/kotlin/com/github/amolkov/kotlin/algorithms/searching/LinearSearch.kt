@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.searching
 
 class LinearSearch {
+
     companion object {
 
         /**
@@ -10,7 +11,7 @@ class LinearSearch {
          * @param key the value to be searched for
          */
         fun <T : Comparable<T>> search(arr: Array<T>, key: T): Int? {
-            (0 until arr.size).forEach {
+            (arr.indices).forEach {
                 if (arr[it] == key) {
                     return it
                 }

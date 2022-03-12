@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.sorting
 
 class CountingSort {
+
     companion object {
 
         /**
@@ -10,22 +11,22 @@ class CountingSort {
          *  @param arr the array to be sorted
          */
         fun sort(arr: Array<Int>) {
-            var max = (0 until arr.size).map { arr[it] }.max() ?: 0
+            var max = (arr.indices).map { arr[it] }.maxOrNull() ?: 0
             max += 1
 
-            val count = Array(max) { _ -> 0 }
-            (0 until arr.size).forEach { count[arr[it]]++ }
+            val count = Array(max) { 0 }
+            (arr.indices).forEach { count[arr[it]]++ }
             (1 until count.size).forEach { count[it] += count[it - 1] }
 
-            val sorted = Array(arr.size) { _ -> 0 }
-            (0 until arr.size).forEach {
+            val sorted = Array(arr.size) { 0 }
+            (arr.indices).forEach {
                 val index = count[arr[it]]
 
                 sorted[index - 1] = arr[it]
                 count[arr[it]]--
             }
 
-            (0 until arr.size).forEach { arr[it] = sorted[it] }
+            (arr.indices).forEach { arr[it] = sorted[it] }
         }
     }
 }

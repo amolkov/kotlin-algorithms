@@ -18,4 +18,4 @@ fun <T> Array<T>.swap(left: Int, right: Int) {
  * @param idx the index of the element where to split the array
  */
 fun <T> Array<T>.split(idx: Int): Pair<Array<T>, Array<T>> =
-        Pair(sliceArray(0 until idx), sliceArray(idx until size))
+    Pair(sliceArray(0 until idx), sliceArray(idx until size))

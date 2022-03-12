@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.searching
 
 class TernarySearch {
+
     companion object {
 
         /**
@@ -9,9 +10,7 @@ class TernarySearch {
          * @param arr the array to be searched
          * @param key the value to be searched for
          */
-        fun search(arr: Array<Int>, key: Int): Int? {
-            return search(arr, key, 0, arr.size)
-        }
+        fun search(arr: Array<Int>, key: Int): Int? = search(arr, key, 0, arr.size)
 
         private fun <T : Comparable<T>> search(arr: Array<T>, key: T, from: Int, to: Int): Int? {
             if (from < to) {

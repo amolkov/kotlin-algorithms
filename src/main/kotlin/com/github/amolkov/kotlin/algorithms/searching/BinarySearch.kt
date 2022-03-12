@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.searching
 
 class BinarySearch {
+
     companion object {
 
         /**
@@ -9,9 +10,7 @@ class BinarySearch {
          * @param arr the array to be searched
          * @param key the value to be searched for
          */
-        fun <T : Comparable<T>> search(arr: Array<T>, key: T): Int? {
-            return search(arr, 0, arr.size, key)
-        }
+        fun <T : Comparable<T>> search(arr: Array<T>, key: T): Int? = search(arr, 0, arr.size, key)
 
         /**
          * Searches the specified array for the specified value using the binary search algorithm.

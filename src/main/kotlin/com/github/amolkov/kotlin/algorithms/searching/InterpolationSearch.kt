@@ -1,6 +1,7 @@
 package com.github.amolkov.kotlin.algorithms.searching
 
 class InterpolationSearch {
+
     companion object {
 
         /**

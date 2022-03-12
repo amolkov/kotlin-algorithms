@@ -3,6 +3,7 @@ package com.github.amolkov.kotlin.algorithms.searching
 import kotlin.math.min
 
 class ExponentialSearch {
+
     companion object {
 
         /**

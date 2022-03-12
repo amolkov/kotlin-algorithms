@@ -3,6 +3,7 @@ package com.github.amolkov.kotlin.algorithms.sorting
 import com.github.amolkov.kotlin.algorithms.extensions.swap
 
 class QuickSort {
+
     companion object {
 
         /**
@@ -11,9 +12,7 @@ class QuickSort {
          *
          *  @param arr the array to be sorted
          */
-        fun <T : Comparable<T>> sort(arr: Array<T>) {
-            sort(arr, 0, arr.size - 1)
-        }
+        fun <T : Comparable<T>> sort(arr: Array<T>) = sort(arr, 0, arr.size - 1)
 
         private fun <T : Comparable<T>> sort(arr: Array<T>, lo: Int, hi: Int) {
             if (lo >= hi) {

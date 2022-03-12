@@ -3,6 +3,7 @@ package com.github.amolkov.kotlin.algorithms.sorting
 import com.github.amolkov.kotlin.algorithms.extensions.swap
 
 class SelectionSort {
+
     companion object {
 
         /**
